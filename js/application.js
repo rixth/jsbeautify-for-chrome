@@ -1,4 +1,8 @@
 (function () {
+  if (!location.href.match(/\.js(?:\?|$)/)) {
+    return;
+  }
+  
   var clippy = document.createElement('div'),
       yes = document.createElement('a'),
       no = document.createElement('a'),

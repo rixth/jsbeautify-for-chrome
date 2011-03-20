@@ -4,7 +4,7 @@
   "content_scripts": [{
      "js": ["js/beautify.js", "js/application.js"],
      "css": ["css/application.css"],
-     "matches": [ "http://*/*.js", "https://*/*.js", "ftp://*/*.js", "file:///*.js" ],
+     "matches": [ "http://*/*.js*", "https://*/*.js*", "ftp://*/*.js", "file:///*.js" ],
      "run_at": "document_end"
   }],
   "description": "When you view a JavaScript file, Clippy will ask you if you want to format it."
