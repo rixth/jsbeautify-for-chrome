@@ -1,12 +1,20 @@
 #jsb4c-clippy {
   background-color: transparent;
   background-repeat: no-repeat;
-  width: 224px;
-  height: 220px;
+  width: 223px;
+  height: 228px;
   position: fixed;
   right: -300px;
   bottom: 10px;
+  
+  -webkit-transition-property: right;
+  -webkit-transition-duration: 0.5s;
 }
+
+#jsb4c-clippy.jsb4c-visible {
+  right: 10px;
+}
+
 #jsb4c-yes, #jsb4c-no {
   font-size: 13px;
   font-family: "Arial", sans-serif;
@@ -17,11 +25,14 @@
   color: black;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
+
 #jsb4c-yes {
   margin-left: 10px;
   width: 90px;
 }
+
 #jsb4c-no {
   margin-left: 13px;
   width: 95px;

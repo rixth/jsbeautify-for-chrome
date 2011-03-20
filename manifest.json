@@ -2,10 +2,10 @@
   "name": "JSBeautify for Chrome",
   "version": "1.0",
   "content_scripts": [{
-     "js": ["js/beautify.js", "js/jquery-1.5.1.js", "js/application.js"],
+     "js": ["js/beautify.js", "js/application.js"],
      "css": ["css/application.css"],
      "matches": [ "http://*/*.js", "https://*/*.js", "ftp://*/*.js", "file:///*.js" ],
      "run_at": "document_end"
   }],
-  "description": "When you view a JavaScript file, this extension will ask you if you want to format it."
+  "description": "When you view a JavaScript file, Clippy will ask you if you want to format it."
 }
