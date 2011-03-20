@@ -1,3 +1,7 @@
+/**
+ * CSS for Clippy mode
+ */
+
 #jsb4c-clippy {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -15,7 +19,7 @@
   right: 10px;
 }
 
-#jsb4c-yes, #jsb4c-no {
+#jsb4c-clippy #jsb4c-yes, #jsb4c-clippy #jsb4c-no {
   font-size: 13px;
   font-family: "Arial", sans-serif;
   display: block;
@@ -28,12 +32,59 @@
   cursor: pointer;
 }
 
-#jsb4c-yes {
+#jsb4c-clippy #jsb4c-yes {
   margin-left: 10px;
   width: 90px;
 }
 
-#jsb4c-no {
+#jsb4c-clippy #jsb4c-no {
   margin-left: 13px;
   width: 95px;
+}
+
+/**
+ * CSS for bar mode
+ */
+
+#jsb4c-bar {
+  height: 22px;
+  position: fixed;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(250,233,167)),
+      color-stop(1, rgb(254,243,197))
+    );
+  border-bottom: 1px solid #8e8e8e;
+  
+  -webkit-transition-property: top;
+  -webkit-transition-duration: 0.5s;
+  
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+}
+
+#jsb4c-bar.jsb4c-visible {
+  top: 0;
+}
+
+#jsb4c-bar #jsb4c-no {
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: right;
+  text-indent: -9999px;
+  
+  margin: -10px 10px 0 0;
+  
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
