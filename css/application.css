@@ -53,6 +53,8 @@
   left: 0;
   width: 100%;
   
+  cursor: pointer;
+  
   background-image: -webkit-gradient(
       linear,
       left bottom,
