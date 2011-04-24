@@ -1,11 +1,17 @@
 {
   "name": "JSBeautify for Chrome",
   "version": "1.0",
+  "options_page": "options.html",
+  "background_page": "background.html",
   "content_scripts": [{
      "js": ["js/beautify.js", "js/application.js"],
      "css": ["css/application.css"],
      "matches": [ "http://*/*.js*", "https://*/*.js*", "ftp://*/*.js", "file:///*.js" ],
      "run_at": "document_end"
   }],
-  "description": "When you view a JavaScript file, Clippy will ask you if you want to format it."
+  "description": "When you view a JavaScript file, Clippy will ask you if you want to format it.",
+  "icons": {
+    "48": "img/jsb-logo-48.png",
+    "128": "img/jsb-logo-128.png"
+  }
 }

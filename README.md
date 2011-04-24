@@ -10,3 +10,5 @@ If you haven't got the love for Clippy, you can use an alert bar instead.
 ![screenshot without clippy](http://i.imgur.com/ZhXnX.png)
 
 Uses [JSBeautify](http://jsbeautifier.org).
+
+A big thanks to [Clement Ng](http://clmnt.com) for the logo.
