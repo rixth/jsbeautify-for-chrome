@@ -1,11 +1,10 @@
 Install it, and bask in His glory.
 
-* [Click here to install with Clippy](https://github.com/downloads/rixth/jsbeautify-for-chrome/jsbeautify-for-chrome-with-clippy.crx)
-* [Click here to install without Clippy](https://github.com/downloads/rixth/jsbeautify-for-chrome/jsbeautify-for-chrome-without-clippy.crx)
+* [Click here to install from the Chrome extension gallery](https://chrome.google.com/extensions/detail/kkioiolcacgoihiiekambdciinadbpfk)
+
+If you haven't got the love for Clippy, you can use an alert bar instead (there's a setting inside the extension options). You can also change specifics about how the code is formatted.
 
 ![screenshot with clippy](http://i.imgur.com/rJEg1.png)
-
-If you haven't got the love for Clippy, you can use an alert bar instead.
 
 ![screenshot without clippy](http://i.imgur.com/ZhXnX.png)
 
