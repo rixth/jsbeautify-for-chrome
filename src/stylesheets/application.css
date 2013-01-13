@@ -10,7 +10,7 @@
   position: fixed;
   right: -300px;
   bottom: 10px;
-  
+
   -webkit-transition-property: right;
   -webkit-transition-duration: 0.5s;
 }
@@ -52,9 +52,9 @@
   top: -40px;
   left: 0;
   width: 100%;
-  
+
   cursor: pointer;
-  
+
   background-image: -webkit-gradient(
       linear,
       left bottom,
@@ -63,10 +63,10 @@
       color-stop(1, rgb(254,243,197))
     );
   border-bottom: 1px solid #8e8e8e;
-  
+
   -webkit-transition-property: top;
   -webkit-transition-duration: 0.5s;
-  
+
   padding-top: 10px;
   padding-left: 10px;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -83,9 +83,9 @@
   width: 32px;
   float: right;
   text-indent: -9999px;
-  
+
   margin: -10px 10px 0 0;
-  
+
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;

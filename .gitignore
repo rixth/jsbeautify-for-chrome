@@ -1,0 +1,6 @@
+*.DS_Store
+Gemfile.lock
+build/
+pkg/
+tmp/
+node_modules/

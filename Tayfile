@@ -1,0 +1,36 @@
+Tay::Specification.new do |ext|
+  ext.name = 'JSBeautify for Google Chrome™'
+  ext.version = '1.0.1'
+  ext.description = 'When you view a JavaScript file, Clippy will ask you if you want to format it.'
+
+  ext.options_page = 'html/options.html'
+
+  ext.add_icon 48, 'assets/icon_48.png'
+  ext.add_icon 128, 'assets/icon_128.png'
+
+  ext.javascripts << 'background.js'
+  ext.javascripts << 'application.js'
+
+  ext.stylesheets << 'application.css'
+  ext.stylesheets << 'options.css'
+
+  ext.web_accessible_resources << 'assets/its-clippy-motherfuckers.png'
+
+  ext.background_scripts << 'javascripts/background.js'
+
+  ext.add_content_script do |cs|
+    cs.include_patterns << "http://*/*.js*"
+    cs.include_patterns << "https://*/*.js*"
+    cs.include_patterns << "ftp://*/*.js*"
+    cs.include_patterns << "file://*/*.js*"
+    cs.javascripts << 'javascripts/application.js'
+    cs.stylesheets << 'stylesheets/application.css'
+    cs.run_at = 'document_end'
+  end
+
+  ext.javascripts << 'javascripts/options.js'
+  ext.javascripts << 'javascripts/options_page.js'
+  ext.stylesheets << 'stylesheets/options_page.css'
+  ext.options_page = 'html/options_page.html'
+  ext.background_scripts << 'javascripts/options_server.js'
+end

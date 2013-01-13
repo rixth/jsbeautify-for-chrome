@@ -1,0 +1,41 @@
+!!!5
+%html
+  %head
+    %title Options
+    %link{rel: "stylesheet", type: "text/css", href: "/stylesheets/options_page.css"}
+  %body
+    .module
+      %h1
+        %img{src: "/assets/icon_48.png"}
+        JSBeautifier for Chrome
+      .content
+        %form#options
+          %ul
+            %li
+              %label
+                Use clippy
+                %input{type: "checkbox", name: "use_clippy"}
+            %li &nbsp;
+            %li
+              %h4 JS Beautify options
+              %ul
+                %li
+                  %label
+                    JSLint happy
+                    %input{type: "checkbox", name: "jslint_happy"}
+                %li
+                  %label
+                    Preserve newlines
+                    %input{type: "checkbox", name: "preserve_newlines"}
+                %li
+                  %label
+                    %select{name: "indent_size"}
+                      %option{value: "1"} Indent with a tab character
+                      %option{value: "2"} Indent with 2 spaces
+                      %option{value: "3"} Indent with 3 spaces
+                      %option{value: "4"} Indent with 4 spaces
+                      %option{value: "8"} Indent with 8 spaces
+      .bottom
+        %a#saveSettings Save your settings
+    %script{src: "/javascripts/options.js"}
+    %script{src: "/javascripts/options_page.js"}
