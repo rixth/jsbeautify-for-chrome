@@ -1,6 +1,6 @@
 Tay::Specification.new do |ext|
   ext.name = 'JSBeautify for Google Chrome™'
-  ext.version = '1.0.1'
+  ext.version = '1.0.2'
   ext.description = 'When you view a JavaScript file, Clippy will ask you if you want to format it.'
 
   ext.options_page = 'html/options.html'
@@ -8,15 +8,12 @@ Tay::Specification.new do |ext|
   ext.add_icon 48, 'assets/icon_48.png'
   ext.add_icon 128, 'assets/icon_128.png'
 
-  ext.javascripts << 'background.js'
   ext.javascripts << 'application.js'
 
   ext.stylesheets << 'application.css'
   ext.stylesheets << 'options.css'
 
   ext.web_accessible_resources << 'assets/its-clippy-motherfuckers.png'
-
-  ext.background_scripts << 'javascripts/background.js'
 
   ext.add_content_script do |cs|
     cs.include_patterns << "http://*/*.js*"
